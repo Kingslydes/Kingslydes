@@ -1,0 +1,74 @@
+.container {
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    padding: 20px;
+}
+h1 {
+    margin-top:100px ;
+    text-align: center;
+    color: #ff3b3b;
+}
+.component {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.component img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the tooltip */
+    left: 50%;
+    margin-left: -80px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.details {
+    margin-top: 10px;
+}
+.details h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.details p {
+    font-size: 14px;
+    color: #333;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    margin: 0 50px;
+    color: #555;
+    font-size: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.intro p{
+
+}
